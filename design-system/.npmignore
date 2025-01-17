@@ -1,0 +1,12 @@
+# .npmignore
+node_modules
+src/main.tsx
+src/index.tsx
+src/App.tsx
+public
+.vscode
+*.log
+*.tsbuildinfo
+tsconfig*.json
+.vite
+.eslintrc.js

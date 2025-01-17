@@ -8,19 +8,24 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
+    
+    "allowImportingTsExtensions": false,
+    
     "moduleDetection": "force",
-    "noEmit": true,
     "jsx": "react-jsx",
-
+    "outDir": "./dist",
+    "declaration": true,
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "composite": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "declarationDir": "./dist/types", // Gera os arquivos de declaração na pasta dist/types
   },
-  "include": ["src"]
+  "include": ["src/helpers/*"],
+  "exclude": ["node_modules", "dist"]
 }
